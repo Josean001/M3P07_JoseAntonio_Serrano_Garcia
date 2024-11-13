@@ -1,0 +1,47 @@
+<!--
+@author Jose Antonio Serrano
+@email serjosedev@gmail.com
+@create date 2024-11-13 11:59:22
+@modify date 2024-11-13 12:02:54
+@desc [description]
+-->
+
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- PRACTICA 24 -->
+        <meta name="copyright" content="© Jose Antonio Serrano García">
+        <!-- Autor -->
+        <meta name="author" content="Jose Antonio Serrano García">
+        <!-- Descripción -->
+        <meta name="description" content="Practica 24 de HTML">
+        <!-- Palabras claves -->
+        <meta name="keywords" content="practica,24,jose,developer, contacto">
+        <!-- Modelo de cifrado -->
+        <meta charset="UTF-8">
+        <!-- Link de las hoja de estilos -->
+        <link rel="stylesheet" href="../css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Titulo del la página web -->
+        <title>Práctica 24</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Máquina de Apuestas</h1>
+            <p>Monedas disponibles: <span id="coins">50</span></p>
+            
+            <label for="number">Elige un número entre 1 y 6:</label>
+            <input type="number" id="number" min="1" max="6" required>
+        
+            <label for="bet">Cantidad de monedas a apostar:</label>
+            <input type="number" id="bet" min="1" required>
+        
+            <button onclick="playGame()">Apostar</button>
+            
+            <div id="message"></div>
+            <div id="history"></div>
+          </div>
+        <script src="src/script.js"></script>
+    </body>
+</html>
